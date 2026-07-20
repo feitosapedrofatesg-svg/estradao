@@ -18,6 +18,7 @@ public class LocalizacaoModel extends BaseModel {
     @Column(nullable = false, length = 120)
     private String cidade;
 
+
     @Column(nullable = false, length = 2)
     private String uf;
 

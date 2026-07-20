@@ -2,6 +2,7 @@ package com.agroStartup.estradao.business.localizacao;
 
 import com.agroStartup.estradao.core.dtos.BaseDTO;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,7 +20,9 @@ public class LocalizacaoDTO extends BaseDTO {
     @Size(min = 2, max = 2, message = "UF deve ter 2 caracteres.")
     private String uf;
 
+    @NotNull(message = "Latitude é obrigatória.")
     private BigDecimal latitude;
 
+    @NotNull(message = "Longitude é obrigatória.")
     private BigDecimal longitude;
 }

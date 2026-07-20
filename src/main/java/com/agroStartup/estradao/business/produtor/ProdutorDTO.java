@@ -2,6 +2,7 @@ package com.agroStartup.estradao.business.produtor;
 
 import com.agroStartup.estradao.core.dtos.BaseDTO;
 import com.agroStartup.estradao.enums.TipoProdutor;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
@@ -17,6 +18,8 @@ public class ProdutorDTO extends BaseDTO {
     @NotBlank(message = "Telefone é obrigatório.")
     private String telefone;
 
+    @NotBlank(message = "E-mail é obrigatório.")
+    @Email(message = "E-mail inválido.")
     private String email;
 
     private Long localizacaoId;
