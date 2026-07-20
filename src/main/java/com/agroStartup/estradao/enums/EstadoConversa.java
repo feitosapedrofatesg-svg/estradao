@@ -1,0 +1,13 @@
+package com.agroStartup.estradao.enums;
+
+public enum EstadoConversa {
+    INICIO,
+    AGUARDANDO_ORIGEM,
+    AGUARDANDO_DESTINO,
+    AGUARDANDO_TIPO_CARGA,
+    AGUARDANDO_PESO,
+    AGUARDANDO_DATA_COLETA,
+    FRETE_CRIADO,
+    AGUARDANDO_PROPOSTA,
+    FINALIZADO
+}
